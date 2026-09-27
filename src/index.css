@@ -1,0 +1,153 @@
+/* ==========================================================================
+   NEOCALC DESIGN SYSTEM & THEME TOKENS
+   ========================================================================== */
+
+:root {
+  /* Fonts */
+  --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Transitions */
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-medium: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Shared Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+}
+
+/* ---------------- Dark Theme (Default) ---------------- */
+[data-theme='dark'],
+:root:not([data-theme='light']) {
+  --bg-app: #080b12;
+  --bg-gradient: radial-gradient(circle at 50% 20%, #171d33 0%, #090c15 65%, #05070c 100%);
+  --bg-card: rgba(18, 24, 38, 0.75);
+  --bg-card-border: rgba(255, 255, 255, 0.09);
+  --bg-card-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.7), 0 0 1px 1px rgba(255, 255, 255, 0.08) inset;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  /* Button Tokens - Dark */
+  --btn-num-bg: rgba(30, 41, 59, 0.55);
+  --btn-num-hover: rgba(51, 65, 85, 0.8);
+  --btn-num-active: rgba(30, 41, 59, 0.95);
+  --btn-num-text: #f1f5f9;
+  --btn-num-border: rgba(255, 255, 255, 0.07);
+  --btn-num-shadow: 0 4px 10px rgba(0, 0, 0, 0.25), 0 1px 0 rgba(255, 255, 255, 0.06) inset;
+
+  --btn-action-bg: rgba(51, 65, 85, 0.45);
+  --btn-action-hover: rgba(71, 85, 105, 0.75);
+  --btn-action-active: rgba(51, 65, 85, 0.9);
+  --btn-action-text: #38bdf8;
+  --btn-action-border: rgba(56, 189, 248, 0.15);
+
+  --btn-op-bg: rgba(99, 102, 241, 0.18);
+  --btn-op-hover: rgba(99, 102, 241, 0.32);
+  --btn-op-active: #6366f1;
+  --btn-op-text: #a5b4fc;
+  --btn-op-border: rgba(99, 102, 241, 0.35);
+
+  --btn-eq-bg: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  --btn-eq-hover: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  --btn-eq-active: linear-gradient(135deg, #4338ca 0%, #6d28d9 100%);
+  --btn-eq-text: #ffffff;
+  --btn-eq-shadow: 0 8px 24px -4px rgba(99, 102, 241, 0.5), 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  --display-bg: rgba(11, 15, 25, 0.7);
+  --display-border: rgba(255, 255, 255, 0.06);
+
+  --overlay-bg: rgba(4, 7, 15, 0.75);
+  --history-bg: #101626;
+  --history-item-bg: rgba(255, 255, 255, 0.03);
+  --history-item-hover: rgba(255, 255, 255, 0.07);
+}
+
+/* ---------------- Light Theme ---------------- */
+[data-theme='light'] {
+  --bg-app: #f1f5f9;
+  --bg-gradient: radial-gradient(circle at 50% 15%, #ffffff 0%, #f1f5f9 60%, #e2e8f0 100%);
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --bg-card-border: rgba(255, 255, 255, 0.9);
+  --bg-card-shadow: 0 20px 45px -10px rgba(100, 116, 139, 0.2), 0 0 1px 1px rgba(255, 255, 255, 1) inset;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+
+  /* Button Tokens - Light */
+  --btn-num-bg: #ffffff;
+  --btn-num-hover: #f8fafc;
+  --btn-num-active: #e2e8f0;
+  --btn-num-text: #1e293b;
+  --btn-num-border: rgba(226, 232, 240, 0.9);
+  --btn-num-shadow: 0 2px 5px rgba(0, 0, 0, 0.04), 0 1px 0 #ffffff inset;
+
+  --btn-action-bg: #e2e8f0;
+  --btn-action-hover: #cbd5e1;
+  --btn-action-active: #94a3b8;
+  --btn-action-text: #0284c7;
+  --btn-action-border: rgba(2, 132, 199, 0.2);
+
+  --btn-op-bg: #e0e7ff;
+  --btn-op-hover: #c7d2fe;
+  --btn-op-active: #4f46e5;
+  --btn-op-text: #4338ca;
+  --btn-op-border: rgba(99, 102, 241, 0.25);
+
+  --btn-eq-bg: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  --btn-eq-hover: linear-gradient(135deg, #4338ca 0%, #6d28d9 100%);
+  --btn-eq-active: linear-gradient(135deg, #3730a3 0%, #5b21b6 100%);
+  --btn-eq-text: #ffffff;
+  --btn-eq-shadow: 0 8px 20px -4px rgba(79, 70, 229, 0.4);
+
+  --display-bg: #f8fafc;
+  --display-border: rgba(226, 232, 240, 0.8);
+
+  --overlay-bg: rgba(15, 23, 42, 0.45);
+  --history-bg: #ffffff;
+  --history-item-bg: #f8fafc;
+  --history-item-hover: #f1f5f9;
+}
+
+/* ==========================================================================
+   BASE RESET & GLOBAL STYLES
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  font-family: var(--font-display);
+  background: var(--bg-app);
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+}
